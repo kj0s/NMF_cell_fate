@@ -17,6 +17,8 @@ hvg <- VariableFeatures(ST227)
 rna_matrix <- rna_matrix[hvg, ]
 
 # === 2. Run NMF ===
+# making a scree plot: do this!
+
 # Choose rank = number of latent programs/factors (e.g., 10)
 nmf_res <- nmf(rna_matrix, rank = 10, method = "brunet", nrun = 30, seed = 1234)
 
