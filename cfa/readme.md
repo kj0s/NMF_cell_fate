@@ -1,4 +1,4 @@
-Cosensus.py code: 
+# Cosensus.py code: 
 you look for factors in agreement across multiple runs. hence you rn a model w diff seed on the same data multiple times. 
 
 A **consensus factor** is a factor that represents the common pattern found across many model runs.
@@ -47,4 +47,40 @@ each factor gets a cluster id (0 to k-1) or a -1 if its an outlier
 
 regroup original factors using factors_raw, compute consensus using self.cons_factors.
 - for each cluster, we take all factors in that cluster, compute the median across them, 
+
+# factors.py code:
+this is the model thats being repeated
+
+## Class: LinearFactorModel 
+### __init__()
+
+1. k = no. of latent factors
+2. params = disctionary of weights, how much to care about each datast, how strong is regularisation
+3. iters = max no of traning iterations
+4. tol = convergence threshold i.e. stop if improvement is tiny
+5. reg = regulariation / extra structure like graphs and penalties
+6. random_state = same as above, seed control for reproducibility
+7. print_iter/check_convergence/verbose = how often to print, how often to check for stopping
+8. normalise_activities = whether to normalise latent variables [check above code]
+9. b_factor_type = non negative tensor factorisation [3d ver of nmf]
+10. learn_factors = which factor matrices are allowed to update
+11. OUTPUT: factors, activities
+12. S = superdiagonal tensor, 3d I.
+
+### loss model(self)
+penalties for bad structure, and check how wrong the model is. the goal is to minimise this term
+
+### fit()
+training the model.
+multiple datasets are jointly modelled, introduces U = activities.
+
+activities / U = latent representation of samples. rows = samples, columns = latent factors.
+
+U [activites] = how much each factor is active in each sample
+V* [factors] = what each factor looks like in a data space
+
+#### iterative updates: 
+for i in range(self.iters) = repeat until full convergence
+
+you update activities using a MULTIPLICATIVE UPDATE RULE to keep values nonnegative; increase U when it helps explain data, decrease U where it hurts
 
