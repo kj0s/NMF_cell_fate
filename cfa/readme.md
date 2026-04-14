@@ -82,5 +82,12 @@ V* [factors] = what each factor looks like in a data space
 #### iterative updates: 
 for i in range(self.iters) = repeat until full convergence
 
-you update activities using a MULTIPLICATIVE UPDATE RULE to keep values nonnegative; increase U when it helps explain data, decrease U where it hurts
+you update activities using a MULTIPLICATIVE UPDATE RULE to keep values nonnegative; increase U when it helps explain data, decrease U where it hurts.
 
+explaining the data is based on the reconstruction method, calculates || real data - reconstructed data|| <sup>2</sup> 
+
+obj_new is the loss term, recalculates loss every time its called, isconverged checks the improvement, stops if improvement is tiny
+
+### reconstruction(self)
+
+rebuild og data from factors, the more similar the reconstruction to the actual data, the better the model.
