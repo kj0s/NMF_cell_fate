@@ -7,11 +7,13 @@ from tqdm import tqdm
 
 class ConsensusFactorModel:
     def __init__(self, k, n_reps = 10, random_states = None, model_params = {}):
-        self.k = k
-        self.n_reps = n_reps
-        self.random_states = list(range(self.n_reps)) if random_states is None else random_states
-        self.models = [factor.LinearFactorModel(self.k, random_state = s, **model_params) for s in self.random_states]
-        self.factor_keys = ["Ve", "Vm", "Vb_0", "Vb_1"]
+        # constructor inputs: 
+        self.k = k                                                                                                        # no. of factors you want
+        self.n_reps = n_reps                                                                                              # how many times youll run the model
+        self.random_states = list(range(self.n_reps)) if random_states is None else random_states                         # seeds for randomness, use list if user doesnt provide seeds
+        self.models = [factor.LinearFactorModel(self.k, random_state = s, **model_params) for s in self.random_states]    # creates a list of models
+        # for s in random_states, make a new factor model with k factors, random seed = s, any extra parameters
+        self.factor_keys = ["Ve", "Vm", "Vb_0", "Vb_1"]                                                                   # what parameters to extract from output
     def fit(self, data_dict):
         for m in tqdm(self.models):
             m.fit(data_dict)
