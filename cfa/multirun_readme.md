@@ -19,4 +19,11 @@ he three data types are organised into a tensor; looks like:
     at timepoint j
     in celltype k
 ```
-then, the data is normalised using ```log1p = log(1+x)
+then, the data is normalised using ```log1p = log(1+x)```
+
+` size is (5034, 5, 8)
+ 
+5034 barcodes, 5 timepoints, 8 cell types. 
+
+The numbers (e.g., 626.93) are likely normalised gene expression or UMI counts. If a cell has a value in D7_Ery but not in others, it was captured or detected as an ery cell specifically at Day 7.
+__If the number is 0.0, it means no cell with that specific barcode was found to have turned into that cell type.__ `
