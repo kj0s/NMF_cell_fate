@@ -24,7 +24,29 @@ then, the data is normalised using ```log1p = log(1+x)```
 ` size is (5034, 5, 8) `
  
 ` 5034 barcodes, 5 timepoints, 8 cell types. `
-
 ` The numbers (e.g., 626.93) are likely normalised gene expression or UMI counts. If a cell has a value in D7_Ery but not in others, it was captured or detected as an ery cell specifically at Day 7. `
 
+`Xe` `Xm` are two matrices : abundance x timepoint and celltype x timepoint  most probably. `Xb` is X[i,j,k]. 
+U is latent representation
+V is how to reconstruct real data from U. 
+
+basically asking if we can compress the data into a form s.t.
+```Xb = complex version of U + Vb0 + Vb1``` 
+from where you can reconstruct the data.
+
+the fit() function just guesses some U, V, uses the current guess:
+`Xe_hat = U @ Ve.T`
+`Xm_hat = U @ Vm.T`
+
+then it measures the error by checking `||Xe - Xe_hat||^2`
+
+then U and V are updated. this means they update multiplicatively; the numerator pulls U towards explaining data, denominator prevents explosion of size. 
+
+# end result
+
+at the end, U is the main output, each row is now a learned feature vector. 
+
+V tells you how each hidden factor influences each dataset
+
+and the aim is to rebuild the data well. 
 __If the number is 0.0, it means no cell with that specific barcode was found to have turned into that cell type. if you have a value X in D7 for some barcode Y, it means that at day 7, a normalised count of X cells with that barcode turned into that cell type.__
