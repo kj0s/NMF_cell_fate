@@ -1,3 +1,5 @@
+# similarity to mofa 2, check if we can replicate findigs w mofa if not similar
+
 script function is to integrate 3 data types i.e. barcode lineage data, stored in the tensor, rna expression, and udt/protein markers. 
 
 it uses multi view factor analysis, leans shared latent structures from the data. 
