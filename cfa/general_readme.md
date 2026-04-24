@@ -50,3 +50,16 @@ V tells you how each hidden factor influences each dataset
 
 and the aim is to rebuild the data well. 
 __If the number is 0.0, it means no cell with that specific barcode was found to have turned into that cell type. if you have a value X in D7 for some barcode Y, it means that at day 7, a normalised count of X cells with that barcode turned into that cell type.__
+
+## understand how the multiplicative updates work:
+
+the code performs the following:
+for some value of `U[i,j]` it asks, *if i increase this val, will it make a closer reconstruction of my data?* aka does it minimise loss term. 
+
+for `U *= (lamda_e*(Xe @ Ve) + lamda_m*(Xm @ Vm) + ...) / (...)`, we see the term `Xe @ Ve`. 
+1. Xe is the data (n x features)
+2. Ve is factor matrix (features x k)
+each entry is hence (n x k), therefore each i,j tells us how well does factor j align with sample i in the data.
+
+-> if `(n x k)[i,j]` is large, this is explained well w the data, and since this is in the numerator, it increases U. 
+denominator has the loss and redundancy terms.
