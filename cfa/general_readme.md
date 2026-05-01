@@ -1,5 +1,7 @@
 # similarity to mofa 2, check if we can replicate findigs w mofa if not similar
-
+-- 
+mofa provides a Variance Explained table or heatmap. It explicitly tells you: "Factor 1 explains 20% of the RNA variation but 0% of the Methylation variation,"
+ 
 script function is to integrate 3 data types i.e. barcode lineage data, stored in the tensor, rna expression, and udt/protein markers. 
 
 it uses multi view factor analysis, leans shared latent structures from the data. 
