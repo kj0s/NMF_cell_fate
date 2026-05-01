@@ -2,6 +2,8 @@
 
 clone barcodes done at bulk level, nmf needs 3 modalities at the same resolution. 
 meaqn used for barcodes here again ,same as nmf. 
+
+each factor when running mofa should be capturing features that are associated w the developmental history
 -- 
 mofa provides a Variance Explained table or heatmap. It explicitly tells you: "Factor 1 explains 20% of the RNA variation but 0% of the Methylation variation,"
  
