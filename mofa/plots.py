@@ -33,3 +33,18 @@ for i in range(model.k):
 
 plt.tight_layout()
 plt.show()
+
+
+n = X_bc.shape[0]
+X_bc_flat = X_bc.reshape(n, -1)
+"b": X_bc_flat 
+
+cfm.fit({
+    "b": X_bc_flat,
+    "e": X_rna.to_numpy() + 1e-9,
+    "m": X_adt.to_numpy() + 1e-9
+})
+
+lamda_b = 1 / np.linalg.norm(X_bc_flat)**2
+lamda_e = 1 / np.linalg.norm(X_rna)**2
+lamda_m = 1 / np.linalg.norm(X_adt)**2
