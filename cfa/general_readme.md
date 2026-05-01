@@ -1,4 +1,7 @@
 # similarity to mofa 2, check if we can replicate findigs w mofa if not similar
+
+clone barcodes done at bulk level, nmf needs 3 modalities at the same resolution. 
+meaqn used for barcodes here again ,same as nmf. 
 -- 
 mofa provides a Variance Explained table or heatmap. It explicitly tells you: "Factor 1 explains 20% of the RNA variation but 0% of the Methylation variation,"
  
