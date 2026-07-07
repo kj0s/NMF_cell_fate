@@ -1,0 +1,385 @@
+1. all - 107/48/859. 
+Remaining RNA features: 18142
+Remaining ADT features: 163
+Remaining Fate features: 40
+
+        #########################################################
+        ###           __  __  ____  ______                    ### 
+        ###          |  \/  |/ __ \|  ____/\    _             ### 
+        ###          | \  / | |  | | |__ /  \ _| |_           ### 
+        ###          | |\/| | |  | |  __/ /\ \_   _|          ###
+        ###          | |  | | |__| | | / ____ \|_|            ###
+        ###          |_|  |_|\____/|_|/_/    \_\              ###
+        ###                                                   ### 
+        ######################################################### 
+         
+
+
+Successfully loaded view='RNA' group='single_group' with N=822 samples and D=18142 features...
+Successfully loaded view='ADT' group='single_group' with N=822 samples and D=163 features...
+Successfully loaded view='Fate_Tracking' group='single_group' with N=822 samples and D=40 features...
+
+
+Model options:
+- Automatic Relevance Determination prior on the factors: True
+- Automatic Relevance Determination prior on the weights: True
+- Spike-and-slab prior on the factors: True
+...
+
+
+Warning: Output file 07072026_topn_mofa.hdf5 already exists, it will be replaced
+Saving model in 07072026_topn_mofa.hdf5...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+(822, 28)
+(822, 5, 8)
+
+
+=== Top RNA features for Factor 0 ===
+KLF1        0.849466
+NFIA        0.847425
+ANK1        0.842060
+HBA1        0.832407
+XACT        0.831141
+TFRC        0.809843
+KCNH2       0.762304
+HBB         0.762058
+SLC25A21    0.758787
+BLVRB       0.749568
+HBA2        0.748135
+PIP5K1B     0.738886
+GYPC        0.732598
+MYH10       0.731008
+WNT5B       0.728435
+TFR2        0.717891
+PVT1        0.714621
+CMBL        0.710964
+MYL4        0.706211
+REXO2       0.705026
+SPTA1       0.704275
+CDC42BPA    0.703156
+MPC2        0.699148
+...
+dtype: float64
+
+=== Top Fate features for Factor 27 ===
+Series([], dtype: float64)
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+{'HBA1': 2, 'SLC25A21': 2, 'HBA2': 2, 'EPCAM': 2, 'HBG2': 2, 'HBG1': 2, 'Hu.CD22': 6, 'Hu.CD131': 7, 'HuMs.CD49f': 6, 'HuMs.integrin.b7': 7, 'Hu.CD45RO': 7, 'Hu.CD39': 7, 'Hu.CD279': 7, 'Hu.CD36': 5, 'Hu.IgM': 4, 'Hu.CD47': 7, 'Hu.CD151': 7, 'Hu.CD63': 10, 'Hu.HLA.DR': 11, 'Hu.IgE': 7, 'Hu.CD88': 4, 'Hu.CD150': 4, 'Hu.CD29': 8, 'Hu.CD146': 5, 'Hu.CD79b': 5, 'Hu.CD162': 5, 'Hu.CD94': 3, 'Hu.CD23': 3, 'Hu.GPR56': 7, 'Hu.Podoplanin': 3, 'Hu.CD194': 5, 'Hu.CD38-HIT2': 10, 'Hu.CD35': 2, 'Hu.CD41': 9, 'Hu.CD24': 5, 'Hu.CD223': 2, 'GP9': 2, 'THBS1': 2, 'ITGB3': 2, 'Hu.FceRIa': 10, 'Hu.CD226-11A8': 9, 'Hu.CD274': 10, 'Hu.CD42b': 8, 'Hu.CD32': 8, 'Hu.CD61': 5, 'Hu.CD40': 8, 'Hu.CLEC1B': 6, 'Hu.CD352': 10, 'Hu.CD270': 7, 'Hu.CD37': 6, 'Hu.Ig.LightChain.k': 10, 'Hu.Ig.LightChain.l': 11, 'Hu.CD55': 9, 'Hu.CD62P': 8, 'Hu.KLRG1': 11, 'Hu.CD84': 8, 'Hu.CD69': 7, 'Hu.HLA.ABC': 8, 'Hu.CD119': 3, 'Hu.CD2': 4, 'Hu.CD49b': 6, 'Hu.CD107a': 8, 'Hu.CD154': 9, 'FTX': 2, 'JMJD1C': 2, 'ARID1B': 2, 'MED13L': 2, 'TCF12': 2, 'ZMYM2': 2, 'Hu.CD58': 10, 'Hu.CD71': 10, 'Hu.CD43': 8, 'Hu.CD49d': 10, 'Hu.CD305-LAIR1': 8, 'Hu.CD18': 6, 'Hu.CD112': 6, 'Hu.CD49a': 7, 'Hu.CD72': 7, 'Hu.CD64': 5, 'Hu.CD93': 7, 'Hu.CD116': 7, 'Hu.CD20-2H7': 3, 'Hu.CD11a': 7, 'Hu.CLEC12A': 9, 'Hu.CD14-M5E2': 4, 'Hu.CD11b': 3, 'Hu.CD45RA': 6, 'Hu.IgD': 2, 'Hu.CD335': 5, 'MYL6': 2, 'SERF2': 2, 'TPT1': 2, 'FAU': 2, 'Hu.CD13': 6, 'Hu.CD52': 7, 'Hu.CD141': 8, 'Hu.CD11c': 8, 'Hu.CD272': 3, 'Hu.CD25': 4, 'Hu.CD134': 8, 'Hu.CD304': 6, 'Hu.CD127': 5, 'Hu.CD57': 2, 'Hu.CD328': 5, 'Hu.CD4-RPA.T4': 8, 'HuMs.CD44': 7, 'Hu.CD45-HI30': 5, 'Hu.CD54': 6, 'Hu.CD137': 4, 'Hu.CD172a': 4, 'Isotype-HTK888': 3, 'Hu.CD275-B7.RP1': 7, 'Hu.CD62L': 5, 'Hu.CD200': 6, 'Hu.CD244': 5, 'Hu.CD56': 2, 'Hu.HLA.DR.DP.DQ': 5, 'Hu.CD155': 7, 'Hu.CD82': 6, 'Hu.CD109': 5, 'HuMsRt.CD278': 6, 'Hu.CD33': 4, 'Hu.CD99': 7, 'Isotype-RTK2071': 2, 'Hu.CD31': 4, 'Hu.CD7': 4, 'PCLAF': 2, 'DUT': 2, 'TOP2A': 2, 'MKI67': 2, 'Hu.CD83': 4, 'Hu.CD142': 8, 'Hu.CD303': 4, 'Hu.CD28': 2, 'Hu.CD185': 4, 'Hu.CD9': 3, 'Hu.TCR.AB': 2, 'Hu.CD85j': 5, 'Hu.CD195': 4, 'Hu.CD95': 8, 'Hu.CD101': 6, 'Hu.CD152': 2, 'Hu.CD3-UCHT1': 2, 'Hu.CD169': 6, 'Hu.CD115': 3, 'Hu.LOX.1': 7, 'Hu.CD48': 6, 'Hu.CD192': 7, 'Hu.CD81': 5, 'Hu.CD1c': 5, 'Hu.CD314': 5, 'Hu.TIGIT': 2, 'LYZ': 2, 'Hu.CD354': 2, 'Hu.CD21': 2, 'Hu.CD163': 2, 'PID1': 2, 'Hu.CD123': 8, 'Hu.CD74': 5, 'Hu.CX3CR1': 5, 'Hu.CD26': 3, 'Hu.CD86': 4, 'Hu.CD268': 3, 'RPS18': 2, 'RPLP1': 2, 'RPS6': 2, 'RPL5': 2, 'RPL7A': 2, 'RPL32': 2, 'RPL17': 3, 'RPL26': 2, 'RPS2': 2, 'RPL9': 2, 'RPL6': 2, 'RPS12': 2, 'RPS23': 3, 'RPS9': 2, 'RPS3A': 2, 'Hu.CD27': 2, 'Hu.CD161': 3, 'Hu.CD267': 5, 'RPL38': 2, 'ATP5MG': 2, 'WDR83OS': 2, 'ELOB': 2, 'FXR1': 2, 'Hu.NKp80': 5, 'Hu.CD183': 3, 'PUM1': 2, 'COX6A1': 2, 'SEC11A': 2, 'PPIA': 2, 'M6PR': 2, 'NDUFA4': 4, 'NASP': 2, 'RPLP0': 2, 'EIF3M': 2, 'RPL27': 2, 'OLA1': 2, 'YBX1': 2, 'DEK': 2, 'PSMB5': 2, 'RNF130': 3, 'Hu.CD319': 2, 'Isotype-G0114F7': 2, 'XRCC5': 2, 'PTGES3': 2, 'EIF2S2': 2, 'COX8A': 2, 'AWAT1': 2, 'LINC02202': 2, 'CNTNAP3C': 2, 'LINC01792': 2, 'FAM166B': 2, 'TRAV22': 2, 'Z73420.1': 2, 'GRIN2B': 2, 'THTPA': 2, 'AFDN-DT': 2, 'MALL': 2, 'TDRD10': 2, 'COX7C': 2, 'GNG5': 2, 'S100A6': 2, 'UBA52': 3, 'ENY2': 2, 'CIAO2B': 2, 'PCMT1': 2, 'SUPT16H': 2, 'GADD45GIP1': 2}
+RNA only: 155
+ADT only: 45
+Shared: 51
+RNA only: {'BCL2', 'ENO1', 'MECOM', 'FER', 'LTB', 'TCF7L2', 'CALR', 'HMGN2', 'LDHA', 'SQLE', 'PHACTR1', 'CARMIL1', 'NSD2', 'VWA8', 'NR6A1', 'PHIP', 'AFF3', 'MDFIC', 'ODC1', 'ZEB2', 'CD74', 'HNRNPAB', 'MANF', 'NCL', 'KCNQ5', 'CD164', 'INPP4B', 'ANGPT1', 'FHIT', 'CHRM3', 'NUCKS1', 'ERG', 'ERVMER61-1', 'HOXA9', 'ARHGAP15', 'PAN3', 'HSPA5', 'YBX1', 'MIF', 'DUT', 'TOP2A', 'PTMA', 'UBE2E2', 'MBD5', 'ITGA4', 'ATP8B4', 'HMGB2', 'WWOX', 'TAF15', 'CCSER1', 'DYNLL1', 'ETV6', 'MALAT1', 'NRIP1', 'GSTCD', 'TUBB', 'CYP1B1', 'LST1', 'TMSB4X', 'FABP5', 'GAPDH', 'C1QTNF4', 'STMN1', 'IMMP2L', 'MBNL1', 'ADK', 'HSP90AB1', 'PTGES3', 'CASC15', 'COG5', 'MAP7', 'MEF2C', 'MIR181A1HG', 'FDPS', 'CPNE8', 'CALM2', 'SAMSN1', 'EIF4G3', 'ZFP36L2', 'IGFBP7', 'DPYD', 'MAPK8', 'TOX', 'NOLC1', 'TM7SF3', 'TMEM163', 'LGALS1', 'GYPC', 'LRBA', 'S100A4', 'ZCCHC7', 'HSP90AA1', 'MSI2', 'RIPOR2', 'R3HDM2', 'E2F3', 'LPCAT2', 'TUBA1B', 'PLEKHA5', 'NUCB2', 'VAV3', 'MIR924HG', 'NPM3', 'HDAC9', 'ABLIM1', 'C1QBP', 'SMYD3', 'RBPMS', 'PCLAF', 'SPTBN1', 'CD109', 'VIM', 'ST6GAL1', 'GRK3', 'MED13L', 'KHDRBS2', 'CACNB4', 'CAMK1D', 'FCHSD2', 'CALN1', 'EPB41L3', 'CCDC171', 'SPIDR', 'TCF4', 'GSTP1', 'NME1', 'SUPT3H', 'FTL', 'ITM2A', 'CYP51A1', 'CNTNAP2', 'RUNX1', 'RNF220', 'MPO', 'RAD51B', 'CYSLTR1', 'NPM1', 'H2AFZ', 'HOPX', 'SCLT1', 'HMGB1', 'HSPD1', 'PRDX1', 'STXBP5', 'ARHGAP25', 'HNRNPA3', 'TAOK3', 'SPINK2', 'DOCK10', 'EIF1AX', 'SLC35F1', 'SERPINB1', 'STK39', 'FTH1', 'NKAIN2'}
+
+
+=== Top RNA features for Factor 0 ===
+KLF1        0.849466
+NFIA        0.847425
+ANK1        0.842060
+HBA1        0.832407
+XACT        0.831141
+TFRC        0.809843
+KCNH2       0.762304
+HBB         0.762058
+SLC25A21    0.758787
+BLVRB       0.749568
+HBA2        0.748135
+PIP5K1B     0.738886
+GYPC        0.732598
+MYH10       0.731008
+WNT5B       0.728435
+TFR2        0.717891
+PVT1        0.714621
+CMBL        0.710964
+MYL4        0.706211
+REXO2       0.705026
+dtype: float64
+
+=== Top ADT features for Factor 0 ===
+...
+Reference RNA genes: 155
+Shared: 25
+MOFA only: 270
+Reference only: 130
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[290], line 7
+      3 import seaborn as sns
+      4 import matplotlib.pyplot as plt
+----> 7 corr_all = pd.concat([corr_rna_df, corr_adt_df], axis=1)
+     10 # core HSC / multilineage genes (RNA)
+     11 gene_targets = [rna_genes[:20]]
+
+NameError: name 'corr_rna_df' is not defined
+<class 'dict'>
+dict_keys(['E', 'EB', 'EN', 'E2', 'ENN'])
+Number RNA genes: 18142
+rna_genes: 155
+unique_features: 907
+<KeysViewHDF5 ['r2_per_factor', 'r2_total']>
+(3, 28)
+[[ 6.13888255e+00  3.61846351e+00  1.29559030e+00  1.65302437e+00
+   1.07694285e+00  2.99203544e+00  2.77300423e-01  2.85001018e+00
+   4.73846800e-01  5.03596733e-01  3.18044755e-01  1.21535654e+00
+   6.47484349e-01  6.21457579e-01  7.08853312e-02  6.37815567e-02
+   6.62244744e-02  2.06534289e-02  5.52308954e-02  6.21660657e-02
+   5.27079245e-02  1.75258799e-02  3.16683694e-02  4.65247065e-02
+   4.41808291e-02  2.61375359e-02  0.00000000e+00  0.00000000e+00]
+ [ 9.96302524e+00  9.51000193e+00  4.30762315e+00  2.95064972e+00
+   2.14291407e+00  9.55857443e-01  1.21336387e+00  1.12202019e+00
+   9.61101664e-01  1.81222054e+00  1.10921387e+00  1.48044028e-01
+   3.10573646e-01  7.30104877e-02  5.23374694e-01  2.73647371e-01
+   1.86448583e-02  2.40842000e-01  2.20329003e-02  1.43328096e-01
+   7.67090498e-02  2.49271465e-03  4.74990889e-02  1.87015249e-02
+   1.46908225e-02  2.00336977e-02  0.00000000e+00  0.00000000e+00]
+ [ 6.10540263e+00  4.68775202e+00  8.91882891e+00  2.19681387e+00
+   1.87121658e+00  5.26111233e-01  2.62330579e+00  1.28724158e-01
+   1.81160708e+00 -3.52942564e-03  1.00540463e-01  1.94585119e-02
+   2.97838880e-02  4.22557451e-03  3.27209738e-04  2.54738466e-03
+   2.31447361e-01  3.14342384e-03  1.56511307e-01  9.82133760e-03
+   5.06988449e-04  6.72310053e-02  5.68283116e-04  3.96389478e-04
+   8.76868768e-04  7.07152455e-05  0.00000000e+00  0.00000000e+00]]
+[22.20731042 17.81621746 14.52204236  6.80048797  5.0910735   4.47400412
+  4.11397008  4.10075452  3.24655555  2.31228784  1.52779909  1.38285908
+  0.98784188  0.69869364  0.59458723  0.33997631  0.31631669  0.26463885
+  0.2337751   0.2153155   0.12992396  0.0872496   0.07973574  0.06562262
+  0.05974852  0.04624195  0.          0.        ]
+28
+Factor
+factor_1      3
+factor_10     5
+factor_11     1
+factor_12     2
+factor_14     2
+factor_15     4
+factor_16     3
+factor_20     6
+factor_3     12
+factor_6     10
+factor_9      3
+NaN           1
+Name: count, dtype: int64
+
+factor_1 (3 genes)
+CACNB4, LDHA, PAN3
+
+factor_10 (5 genes)
+CCR2, ENO1, TFRC, TOP2A, ZCCHC7
+
+factor_11 (1 genes)
+CD200
+
+factor_12 (2 genes)
+C1QBP, CALM2
+
+factor_14 (2 genes)
+ITM2A, MBNL1
+
+factor_15 (4 genes)
+ETV6, PCLAF, RNF220, SPINK2
+
+factor_16 (3 genes)
+CHRM3, GYPC, MAP7
+
+factor_20 (6 genes)
+ARHGAP15, C1QTNF4, KCNQ5, MBD5, MED13L, MPO
+
+factor_3 (12 genes)
+ANGPT1, CALN1, ERG, FTH1, FTL, GAPDH, HOPX, LRBA, MSI2, NPM1, RBPMS, S100A4
+
+factor_6 (10 genes)
+CALR, DUT, H2AFZ, HMGB2, HNRNPAB, PTGES3, PTMA, TMSB4X, YBX1, ZEB2
+
+factor_9 (3 genes)
+COG5, FHIT, MIR924HG
+
+
+2. running SAME PARAMS with hsc only 0.0 ALL HSC.
+
+Remaining RNA features: 15056
+Remaining ADT features: 163
+Remaining Fate features: 40
+
+        #########################################################
+        ###           __  __  ____  ______                    ### 
+        ###          |  \/  |/ __ \|  ____/\    _             ### 
+        ###          | \  / | |  | | |__ /  \ _| |_           ### 
+        ###          | |\/| | |  | |  __/ /\ \_   _|          ###
+        ###          | |  | | |__| | | / ____ \|_|            ###
+        ###          |_|  |_|\____/|_|/_/    \_\              ###
+        ###                                                   ### 
+        ######################################################### 
+         
+
+
+Successfully loaded view='RNA' group='single_group' with N=112 samples and D=15056 features...
+Successfully loaded view='ADT' group='single_group' with N=112 samples and D=163 features...
+Successfully loaded view='Fate_Tracking' group='single_group' with N=112 samples and D=40 features...
+
+
+Model options:
+- Automatic Relevance Determination prior on the factors: True
+- Automatic Relevance Determination prior on the weights: True
+- Spike-and-slab prior on the factors: True
+...
+
+
+Warning: Output file 07072026_topn_mofa.hdf5 already exists, it will be replaced
+Saving model in 07072026_topn_mofa.hdf5...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+(112, 28)
+(112, 5, 8)
+
+
+=== Top RNA features for Factor 0 ===
+HSPD1     0.799668
+H2AFZ     0.778261
+TUBA1B    0.762878
+TYMS      0.752759
+DUT       0.751220
+PCLAF     0.714953
+FABP5     0.711304
+HSPE1     0.706242
+LDHB      0.703232
+RANBP1    0.696051
+MIF       0.677053
+RAN       0.676849
+MAD2L1    0.665611
+SRSF7     0.656147
+C1QBP     0.655776
+MCM4      0.653456
+PCNA      0.649229
+DNMT1     0.633723
+PHGDH     0.628664
+PAICS     0.625407
+FEN1      0.625031
+DHFR      0.624105
+PTGES3    0.619690
+...
+dtype: float64
+
+=== Top Fate features for Factor 27 ===
+Series([], dtype: float64)
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+{'HBA1': 2, 'SLC25A21': 2, 'HBA2': 2, 'EPCAM': 2, 'HBG2': 2, 'HBG1': 2, 'Hu.CD22': 6, 'Hu.CD131': 7, 'HuMs.CD49f': 6, 'HuMs.integrin.b7': 7, 'Hu.CD45RO': 7, 'Hu.CD39': 7, 'Hu.CD279': 7, 'Hu.CD36': 5, 'Hu.IgM': 4, 'Hu.CD47': 7, 'Hu.CD151': 7, 'Hu.CD63': 10, 'Hu.HLA.DR': 11, 'Hu.IgE': 7, 'Hu.CD88': 4, 'Hu.CD150': 4, 'Hu.CD29': 8, 'Hu.CD146': 5, 'Hu.CD79b': 5, 'Hu.CD162': 5, 'Hu.CD94': 3, 'Hu.CD23': 3, 'Hu.GPR56': 7, 'Hu.Podoplanin': 3, 'Hu.CD194': 5, 'Hu.CD38-HIT2': 10, 'Hu.CD35': 2, 'Hu.CD41': 9, 'Hu.CD24': 5, 'Hu.CD223': 2, 'GP9': 2, 'THBS1': 2, 'ITGB3': 2, 'Hu.FceRIa': 10, 'Hu.CD226-11A8': 9, 'Hu.CD274': 10, 'Hu.CD42b': 8, 'Hu.CD32': 8, 'Hu.CD61': 5, 'Hu.CD40': 8, 'Hu.CLEC1B': 6, 'Hu.CD352': 10, 'Hu.CD270': 7, 'Hu.CD37': 6, 'Hu.Ig.LightChain.k': 10, 'Hu.Ig.LightChain.l': 11, 'Hu.CD55': 9, 'Hu.CD62P': 8, 'Hu.KLRG1': 11, 'Hu.CD84': 8, 'Hu.CD69': 7, 'Hu.HLA.ABC': 8, 'Hu.CD119': 3, 'Hu.CD2': 4, 'Hu.CD49b': 6, 'Hu.CD107a': 8, 'Hu.CD154': 9, 'FTX': 2, 'JMJD1C': 2, 'ARID1B': 2, 'MED13L': 2, 'TCF12': 2, 'ZMYM2': 2, 'Hu.CD58': 10, 'Hu.CD71': 10, 'Hu.CD43': 8, 'Hu.CD49d': 10, 'Hu.CD305-LAIR1': 8, 'Hu.CD18': 6, 'Hu.CD112': 6, 'Hu.CD49a': 7, 'Hu.CD72': 7, 'Hu.CD64': 5, 'Hu.CD93': 7, 'Hu.CD116': 7, 'Hu.CD20-2H7': 3, 'Hu.CD11a': 7, 'Hu.CLEC12A': 9, 'Hu.CD14-M5E2': 4, 'Hu.CD11b': 3, 'Hu.CD45RA': 6, 'Hu.IgD': 2, 'Hu.CD335': 5, 'MYL6': 2, 'SERF2': 2, 'TPT1': 2, 'FAU': 2, 'Hu.CD13': 6, 'Hu.CD52': 7, 'Hu.CD141': 8, 'Hu.CD11c': 8, 'Hu.CD272': 3, 'Hu.CD25': 4, 'Hu.CD134': 8, 'Hu.CD304': 6, 'Hu.CD127': 5, 'Hu.CD57': 2, 'Hu.CD328': 5, 'Hu.CD4-RPA.T4': 8, 'HuMs.CD44': 7, 'Hu.CD45-HI30': 5, 'Hu.CD54': 6, 'Hu.CD137': 4, 'Hu.CD172a': 4, 'Isotype-HTK888': 3, 'Hu.CD275-B7.RP1': 7, 'Hu.CD62L': 5, 'Hu.CD200': 6, 'Hu.CD244': 5, 'Hu.CD56': 2, 'Hu.HLA.DR.DP.DQ': 5, 'Hu.CD155': 7, 'Hu.CD82': 6, 'Hu.CD109': 5, 'HuMsRt.CD278': 6, 'Hu.CD33': 4, 'Hu.CD99': 7, 'Isotype-RTK2071': 2, 'Hu.CD31': 4, 'Hu.CD7': 4, 'PCLAF': 2, 'DUT': 2, 'TOP2A': 2, 'MKI67': 2, 'Hu.CD83': 4, 'Hu.CD142': 8, 'Hu.CD303': 4, 'Hu.CD28': 2, 'Hu.CD185': 4, 'Hu.CD9': 3, 'Hu.TCR.AB': 2, 'Hu.CD85j': 5, 'Hu.CD195': 4, 'Hu.CD95': 8, 'Hu.CD101': 6, 'Hu.CD152': 2, 'Hu.CD3-UCHT1': 2, 'Hu.CD169': 6, 'Hu.CD115': 3, 'Hu.LOX.1': 7, 'Hu.CD48': 6, 'Hu.CD192': 7, 'Hu.CD81': 5, 'Hu.CD1c': 5, 'Hu.CD314': 5, 'Hu.TIGIT': 2, 'LYZ': 2, 'Hu.CD354': 2, 'Hu.CD21': 2, 'Hu.CD163': 2, 'PID1': 2, 'Hu.CD123': 8, 'Hu.CD74': 5, 'Hu.CX3CR1': 5, 'Hu.CD26': 3, 'Hu.CD86': 4, 'Hu.CD268': 3, 'RPS18': 2, 'RPLP1': 2, 'RPS6': 2, 'RPL5': 2, 'RPL7A': 2, 'RPL32': 2, 'RPL17': 3, 'RPL26': 2, 'RPS2': 2, 'RPL9': 2, 'RPL6': 2, 'RPS12': 2, 'RPS23': 3, 'RPS9': 2, 'RPS3A': 2, 'Hu.CD27': 2, 'Hu.CD161': 3, 'Hu.CD267': 5, 'RPL38': 2, 'ATP5MG': 2, 'WDR83OS': 2, 'ELOB': 2, 'FXR1': 2, 'Hu.NKp80': 5, 'Hu.CD183': 3, 'PUM1': 2, 'COX6A1': 2, 'SEC11A': 2, 'PPIA': 2, 'M6PR': 2, 'NDUFA4': 4, 'NASP': 2, 'RPLP0': 2, 'EIF3M': 2, 'RPL27': 2, 'OLA1': 2, 'YBX1': 2, 'DEK': 2, 'PSMB5': 2, 'RNF130': 3, 'Hu.CD319': 2, 'Isotype-G0114F7': 2, 'XRCC5': 2, 'PTGES3': 2, 'EIF2S2': 2, 'COX8A': 2, 'AWAT1': 2, 'LINC02202': 2, 'CNTNAP3C': 2, 'LINC01792': 2, 'FAM166B': 2, 'TRAV22': 2, 'Z73420.1': 2, 'GRIN2B': 2, 'THTPA': 2, 'AFDN-DT': 2, 'MALL': 2, 'TDRD10': 2, 'COX7C': 2, 'GNG5': 2, 'S100A6': 2, 'UBA52': 3, 'ENY2': 2, 'CIAO2B': 2, 'PCMT1': 2, 'SUPT16H': 2, 'GADD45GIP1': 2}
+RNA only: 155
+ADT only: 45
+Shared: 36
+RNA only: {'BCL2', 'ENO1', 'MECOM', 'FER', 'LTB', 'TCF7L2', 'CALR', 'HMGN2', 'LDHA', 'SQLE', 'PHACTR1', 'CARMIL1', 'NSD2', 'VWA8', 'NR6A1', 'PHIP', 'AFF3', 'MDFIC', 'ODC1', 'ZEB2', 'CD74', 'HNRNPAB', 'MANF', 'NCL', 'KCNQ5', 'CD164', 'INPP4B', 'ANGPT1', 'FHIT', 'CHRM3', 'NUCKS1', 'ERG', 'ERVMER61-1', 'HOXA9', 'ARHGAP15', 'PAN3', 'HSPA5', 'YBX1', 'MIF', 'DUT', 'TOP2A', 'PTMA', 'UBE2E2', 'MBD5', 'ITGA4', 'ATP8B4', 'HMGB2', 'WWOX', 'TAF15', 'CCSER1', 'DYNLL1', 'ETV6', 'MALAT1', 'NRIP1', 'GSTCD', 'TUBB', 'CYP1B1', 'LST1', 'TMSB4X', 'FABP5', 'GAPDH', 'C1QTNF4', 'STMN1', 'IMMP2L', 'MBNL1', 'ADK', 'HSP90AB1', 'PTGES3', 'CASC15', 'COG5', 'MAP7', 'MEF2C', 'MIR181A1HG', 'FDPS', 'CPNE8', 'CALM2', 'SAMSN1', 'EIF4G3', 'ZFP36L2', 'IGFBP7', 'DPYD', 'MAPK8', 'TOX', 'NOLC1', 'TM7SF3', 'TMEM163', 'LGALS1', 'GYPC', 'LRBA', 'S100A4', 'ZCCHC7', 'HSP90AA1', 'MSI2', 'RIPOR2', 'R3HDM2', 'E2F3', 'LPCAT2', 'TUBA1B', 'PLEKHA5', 'NUCB2', 'VAV3', 'MIR924HG', 'NPM3', 'HDAC9', 'ABLIM1', 'C1QBP', 'SMYD3', 'RBPMS', 'PCLAF', 'SPTBN1', 'CD109', 'VIM', 'ST6GAL1', 'GRK3', 'MED13L', 'KHDRBS2', 'CACNB4', 'CAMK1D', 'FCHSD2', 'CALN1', 'EPB41L3', 'CCDC171', 'SPIDR', 'TCF4', 'GSTP1', 'NME1', 'SUPT3H', 'FTL', 'ITM2A', 'CYP51A1', 'CNTNAP2', 'RUNX1', 'RNF220', 'MPO', 'RAD51B', 'CYSLTR1', 'NPM1', 'H2AFZ', 'HOPX', 'SCLT1', 'HMGB1', 'HSPD1', 'PRDX1', 'STXBP5', 'ARHGAP25', 'HNRNPA3', 'TAOK3', 'SPINK2', 'DOCK10', 'EIF1AX', 'SLC35F1', 'SERPINB1', 'STK39', 'FTH1', 'NKAIN2'}
+
+
+=== Top RNA features for Factor 0 ===
+HSPD1     0.799668
+H2AFZ     0.778261
+TUBA1B    0.762878
+TYMS      0.752759
+DUT       0.751220
+PCLAF     0.714953
+FABP5     0.711304
+HSPE1     0.706242
+LDHB      0.703232
+RANBP1    0.696051
+MIF       0.677053
+RAN       0.676849
+MAD2L1    0.665611
+SRSF7     0.656147
+C1QBP     0.655776
+MCM4      0.653456
+PCNA      0.649229
+DNMT1     0.633723
+PHGDH     0.628664
+PAICS     0.625407
+dtype: float64
+
+=== Top ADT features for Factor 0 ===
+...
+Reference RNA genes: 155
+Shared: 17
+MOFA only: 262
+Reference only: 138
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[309], line 7
+      3 import seaborn as sns
+      4 import matplotlib.pyplot as plt
+----> 7 corr_all = pd.concat([corr_rna_df, corr_adt_df], axis=1)
+     10 # core HSC / multilineage genes (RNA)
+     11 gene_targets = [rna_genes[:20]]
+
+NameError: name 'corr_rna_df' is not defined
+<class 'dict'>
+dict_keys(['E', 'EB', 'EN', 'E2', 'ENN'])
+Number RNA genes: 15056
+rna_genes: 155
+<KeysViewHDF5 ['r2_per_factor', 'r2_total']>
+(3, 28)
+[[4.11175613e+00 4.06630700e-01 5.94393411e-01 4.40808394e-01
+  2.18270500e-01 6.18568675e-01 2.99573660e-01 9.29718503e-01
+  4.65767960e-01 3.90886914e-01 3.77480494e-01 3.13622626e-01
+  3.95969735e-01 5.49845893e-01 3.25649049e-01 1.94846303e-01
+  1.17558315e-01 3.70971533e-01 3.33289052e-01 3.09756407e-01
+  2.13616728e-01 4.03545070e-01 3.01131542e-01 1.97717998e-01
+  2.88080836e-01 1.93390239e-01 1.86734565e-01 1.27625068e-01]
+ [3.32383061e+00 8.26070135e-01 2.45849897e-01 6.26361463e-01
+  7.06298627e-02 6.19162412e-01 8.67658976e-01 3.98748537e-02
+  4.03544498e-01 4.45460013e-01 3.44988166e-01 4.31062311e-01
+  3.21010513e-01 1.60493607e-01 2.63758134e-01 3.82776416e-01
+  4.42490045e-01 1.38319962e-01 2.12240444e-01 2.01798448e-01
+  2.99472719e-01 6.36385026e-02 8.60187110e-02 1.51359909e-01
+  2.01263162e-02 1.09082254e-01 8.81463497e-02 2.52406771e-02]
+ [1.07030555e+01 1.58557773e+00 7.45735841e-01 3.99446708e-01
+  1.13592893e+00 1.66088555e-01 1.52126623e-01 1.96540546e-02
+  7.39351090e-03 1.05577838e-02 8.15243353e-02 3.20197384e-02
+  5.16022976e-02 6.13986388e-03 8.45703867e-02 1.16658828e-02
+  1.40074043e-02 5.36794844e-02 5.35323942e-03 2.55666768e-02
+  6.91308026e-03 1.52363162e-02 9.12166402e-03 3.54116169e-02
+  3.75076120e-02 3.53661606e-02 2.08318268e-02 8.34585497e-03]]
+[18.13864228  2.81827856  1.58597915  1.46661656  1.42482929  1.40381964
+  1.31935926  0.98924741  0.87670597  0.84690471  0.80399299  0.77670468
+  0.76858255  0.71647936  0.67397757  0.5892886   0.57405576  0.56297098
+  0.55088273  0.53712153  0.52000253  0.48241989  0.39627192  0.38448952
+  0.34571476  0.33783865  0.29571274  0.1612116 ]
+28
+Factor
+factor_0      1
+factor_1      2
+factor_10     4
+factor_12     2
+factor_14     3
+factor_15     2
+factor_20     5
+factor_3      3
+factor_6     10
+factor_9      4
+Name: count, dtype: int64
+
+factor_0 (1 genes)
+CD47
+
+factor_1 (2 genes)
+DPYD, E2F3
+
+factor_10 (4 genes)
+CCR2, ENO1, MIF, ZFP36L2
+
+factor_12 (2 genes)
+C1QBP, FABP5
+
+factor_14 (3 genes)
+EIF4G3, SPIDR, WWOX
+
+factor_15 (2 genes)
+IGFBP7, PCLAF
+
+factor_20 (5 genes)
+ARHGAP15, CD74, HDAC9, MAPK8, TAF15
+
+factor_3 (3 genes)
+FTL, LRBA, S100A4
+
+factor_6 (10 genes)
+CALR, DUT, H2AFZ, HMGB1, HSP90AB1, HSPD1, NUCKS1, PTGES3, TMSB4X, TUBA1B
+
+factor_9 (4 genes)
+FHIT, GSTP1, IMMP2L, LGALS1
