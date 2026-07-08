@@ -17,4 +17,6 @@ common_genes = sorted(set(nmf_genes) & set(feat_rna_with_var))
 print(f"Common genes: {len(common_genes)} (NMF had {len(nmf_genes)}, MOFA RNA had {len(feat_rna_with_var)})")
 ```
 
+*remaining genes found* the final gene list seems to be coming from a non hsc dataset. mofa seems to be run on the overall data here instead of just hscs. thats why the gene list showed such difference. we will rerun nmf wth the hsc dataset and resave, retry. 
+
 Some better techniques to evaluate feature importance based on each model are 
