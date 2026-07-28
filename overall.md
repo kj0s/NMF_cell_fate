@@ -11,9 +11,9 @@ The central pattern worth interrogating: the two transforms explicitly designed 
 
 this model is run on rna,adt,and fate data. the fate data has had the least effect on the r2 value. the sample level mismatch is cleared as we are avg expression values per barcode. the rna has been library normalised, then log1p. adt seems to have undergone clr transform. through inspection, I have learnt Looking closer at the fate view, MOFA seems to be differentiating clones based on how many cells they made overall, rather than on their actual fate pattern. Log1p this view doesn't fix that problem as it shrinks the size difference between clones, but doesn't remove it. So two clones with the exact same differentiation pattern (e.g. splitting 50/50 into the same two cell types) can still end up looking very different to MOFA just because one clone expanded into far more cells than the other [explain what kind of visualissation/strategy could have got this output].
 
-The mofa parameters that work best, even if its counterintuitive to mofa documentation ,are ent = entry_point()
+The mofa parameters that work best, even if its counterintuitive to mofa documentation ,are 
+``` ent = entry_point()
 ent.set_data_options(scale_views=True)
-# double normalising here !! TODO
 ent.set_data_matrix(
     [[mat_rna], [mat_adt], [mat_fate]],
     likelihoods=["gaussian", "gaussian", "gaussian"],
@@ -23,9 +23,10 @@ ent.set_data_matrix(
     features_names=[feat_rna, feat_adt, fate_features],
 )
 ent.set_model_options(factors=15, spikeslab_weights=False, ard_weights=False)
-ent.set_train_options(convergence_mode="medium", iter=1000, verbose=True, seed=43)
+ent.set_train_options(convergence_mode="medium", iter=1000, verbose=True, seed=43) ```
+
 some methods were used to try normalize fate more effectively, they produce ‘better’ figures sometimes but the overlap doesn’t get much better overall. Methods tried- clr transform; made fate completely 0 r2 value all over. Method 2: 
-X_raw = np.dstack([df.to_numpy() for df in df_all])
+```X_raw = np.dstack([df.to_numpy() for df in df_all])
 clone_totals = X_raw.reshape(X_raw.shape[0], -1).sum(axis=1, keepdims=True)
 clone_totals = np.where(clone_totals == 0, 1, clone_totals)
 X_prop = X_raw / clone_totals[:, :, None]
@@ -33,7 +34,8 @@ X_norm = np.log1p(X_prop * X_raw.reshape(X_raw.shape[0], -1).mean())
 
 mat_fate_norm = X_norm.reshape(X_norm.shape[0], -1).astype(np.float64)
 mat_fate=mat_fate_norm
+```
+
 also made fate have zero r2 in every factor. Just log1p the fate matrix was tried, gave the best output so far. 1.40.2/0.5/0.1 and then 0.0 % variance explained everywhere. Expression per day graphs still not as great, not very clear for this. 
 I believe hyperperamaters have been optimized best they can, there is a possibility these new normalisations are better for the fate and it isn’t showing up because mofa says they bias larger modalities and fate is much smaller and hence is not explaining much of data. 
 
-![Uploading image.png…]()
